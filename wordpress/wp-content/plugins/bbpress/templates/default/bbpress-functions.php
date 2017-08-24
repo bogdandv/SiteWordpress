@@ -467,4 +467,19 @@ class BBP_Default extends BBP_Theme_Compat {
 	}
 }
 new BBP_Default();
+
+function display_counts () 
+{
+		$reply_author_id = bbp_get_reply_author_id( array( 'post_id' => bbp_get_topic_last_active_id() ) );
+		$role = bbp_get_user_role( $reply_author_id );
+		if($role=='bbp_keymaster' || $role=='bbp_moderator')
+		{
+			echo "</br>" ;
+			echo '<p style="color: #012169;">PROFESOR</p>';
+			}
+		echo "</br>" ;
+		//add some if statements here eg if $post_count>100 echo 'hero' or a link to a picture
+		}
+add_action ('bbp_theme_after_reply_author_details', 'display_counts') ;
+
 endif;
