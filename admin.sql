@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 26 Aug 2017 la 13:05
--- Versiune server: 5.7.14
+-- Generation Time: Aug 26, 2017 at 01:42 PM
+-- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `admin`
+-- Database: `auser`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_activity`
+-- Table structure for table `wp_bp_activity`
 --
 
 CREATE TABLE `wp_bp_activity` (
@@ -44,12 +44,12 @@ CREATE TABLE `wp_bp_activity` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_bp_activity`
+-- Dumping data for table `wp_bp_activity`
 --
 
 INSERT INTO `wp_bp_activity` (`id`, `user_id`, `component`, `type`, `action`, `content`, `primary_link`, `item_id`, `secondary_item_id`, `date_recorded`, `hide_sitewide`, `mptt_left`, `mptt_right`, `is_spam`) VALUES
-(1, 1, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-26 12:59:24', 0, 0, 0, 0),
-(2, 3, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-26 13:02:39', 0, 0, 0, 0),
+(1, 1, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-26 13:35:01', 0, 0, 0, 0),
+(2, 3, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-26 13:31:08', 0, 0, 0, 0),
 (3, 3, 'bbpress', 'bbp_reply_create', '<a href="http://localhost/testsite/wordpress/members/test1/" rel="nofollow">test1</a> replied to the topic <a href="http://localhost/testsite/wordpress/forums/topic/be-nice/">be nice</a> in the forum <a href="http://localhost/testsite/wordpress/forums/forum/test-forum-1/">Test Forum 1</a>', '<a class=\'bp-suggestions-mention\' href=\'http://localhost/testsite/wordpress/members/test4/\' rel=\'nofollow\'>@test4</a>, go away', 'http://localhost/testsite/wordpress/forums/topic/be-nice/#post-51', 51, 10, '2017-08-24 13:13:22', 0, 0, 0, 0),
 (4, 5, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-24 13:42:10', 0, 0, 0, 0),
 (5, 4, 'members', 'last_activity', '', '', '', 0, NULL, '2017-08-24 13:56:03', 0, 0, 0, 0),
@@ -59,7 +59,7 @@ INSERT INTO `wp_bp_activity` (`id`, `user_id`, `component`, `type`, `action`, `c
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_activity_meta`
+-- Table structure for table `wp_bp_activity_meta`
 --
 
 CREATE TABLE `wp_bp_activity_meta` (
@@ -72,7 +72,7 @@ CREATE TABLE `wp_bp_activity_meta` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_notifications`
+-- Table structure for table `wp_bp_notifications`
 --
 
 CREATE TABLE `wp_bp_notifications` (
@@ -87,7 +87,7 @@ CREATE TABLE `wp_bp_notifications` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_bp_notifications`
+-- Dumping data for table `wp_bp_notifications`
 --
 
 INSERT INTO `wp_bp_notifications` (`id`, `user_id`, `item_id`, `secondary_item_id`, `component_name`, `component_action`, `date_notified`, `is_new`) VALUES
@@ -98,7 +98,7 @@ INSERT INTO `wp_bp_notifications` (`id`, `user_id`, `item_id`, `secondary_item_i
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_notifications_meta`
+-- Table structure for table `wp_bp_notifications_meta`
 --
 
 CREATE TABLE `wp_bp_notifications_meta` (
@@ -111,7 +111,7 @@ CREATE TABLE `wp_bp_notifications_meta` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_xprofile_data`
+-- Table structure for table `wp_bp_xprofile_data`
 --
 
 CREATE TABLE `wp_bp_xprofile_data` (
@@ -123,7 +123,7 @@ CREATE TABLE `wp_bp_xprofile_data` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_bp_xprofile_data`
+-- Dumping data for table `wp_bp_xprofile_data`
 --
 
 INSERT INTO `wp_bp_xprofile_data` (`id`, `field_id`, `user_id`, `value`, `last_updated`) VALUES
@@ -137,7 +137,7 @@ INSERT INTO `wp_bp_xprofile_data` (`id`, `field_id`, `user_id`, `value`, `last_u
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_xprofile_fields`
+-- Table structure for table `wp_bp_xprofile_fields`
 --
 
 CREATE TABLE `wp_bp_xprofile_fields` (
@@ -156,7 +156,7 @@ CREATE TABLE `wp_bp_xprofile_fields` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_bp_xprofile_fields`
+-- Dumping data for table `wp_bp_xprofile_fields`
 --
 
 INSERT INTO `wp_bp_xprofile_fields` (`id`, `group_id`, `parent_id`, `type`, `name`, `description`, `is_required`, `is_default_option`, `field_order`, `option_order`, `order_by`, `can_delete`) VALUES
@@ -165,7 +165,7 @@ INSERT INTO `wp_bp_xprofile_fields` (`id`, `group_id`, `parent_id`, `type`, `nam
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_xprofile_groups`
+-- Table structure for table `wp_bp_xprofile_groups`
 --
 
 CREATE TABLE `wp_bp_xprofile_groups` (
@@ -177,7 +177,7 @@ CREATE TABLE `wp_bp_xprofile_groups` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_bp_xprofile_groups`
+-- Dumping data for table `wp_bp_xprofile_groups`
 --
 
 INSERT INTO `wp_bp_xprofile_groups` (`id`, `name`, `description`, `group_order`, `can_delete`) VALUES
@@ -186,7 +186,7 @@ INSERT INTO `wp_bp_xprofile_groups` (`id`, `name`, `description`, `group_order`,
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_bp_xprofile_meta`
+-- Table structure for table `wp_bp_xprofile_meta`
 --
 
 CREATE TABLE `wp_bp_xprofile_meta` (
@@ -200,7 +200,7 @@ CREATE TABLE `wp_bp_xprofile_meta` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_commentmeta`
+-- Table structure for table `wp_commentmeta`
 --
 
 CREATE TABLE `wp_commentmeta` (
@@ -213,7 +213,7 @@ CREATE TABLE `wp_commentmeta` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_comments`
+-- Table structure for table `wp_comments`
 --
 
 CREATE TABLE `wp_comments` (
@@ -235,7 +235,7 @@ CREATE TABLE `wp_comments` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_comments`
+-- Dumping data for table `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -244,7 +244,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_links`
+-- Table structure for table `wp_links`
 --
 
 CREATE TABLE `wp_links` (
@@ -266,7 +266,7 @@ CREATE TABLE `wp_links` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_options`
+-- Table structure for table `wp_options`
 --
 
 CREATE TABLE `wp_options` (
@@ -277,7 +277,7 @@ CREATE TABLE `wp_options` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_options`
+-- Dumping data for table `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -418,7 +418,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (345, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2017/08/wordpress-4-8-1-maintenance-release/\'>WordPress 4.8.1 Maintenance Release</a></li></ul></div><div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/core-team-explores-idea-to-automatically-upgrade-sites-running-wordpress-3-7-to-3-8\'>WPTavern: Core Team Explores Idea to Automatically Upgrade Sites Running WordPress 3.7 to 3.8</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/locating-restored-comments-in-wordpress-requires-detective-skills\'>WPTavern: Locating Restored Comments in WordPress Requires Detective Skills</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/playing-the-role-of-online-reputation-manager\'>WPTavern: Playing the Role of Online Reputation Manager</a></li></ul></div>', 'no'),
 (351, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1503751228;s:7:"checked";a:4:{s:13:"twentyfifteen";s:3:"1.8";s:15:"twentyseventeen";s:3:"1.3";s:13:"twentysixteen";s:3:"1.3";s:7:"vantage";s:5:"1.6.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
 (352, 'current_theme', 'Vantage', 'yes'),
-(353, 'theme_mods_vantage', 'a:19:{i:0;b:0;s:18:"nav_menu_locations";a:2:{s:3:"top";i:3;s:7:"primary";i:3;}s:18:"custom_css_post_id";i:-1;s:24:"vantage_sidebar_position";s:4:"none";s:30:"vantage_fonts_page_title_color";s:7:"#515151";s:27:"vantage_fonts_content_color";s:7:"#282828";s:35:"vantage_fonts_content_heading_color";s:7:"#444444";s:23:"vantage_fonts_body_font";s:5:"Arial";s:24:"vantage_fonts_title_font";s:5:"Arial";s:26:"vantage_fonts_heading_font";s:5:"Arial";s:23:"vantage_fonts_menu_font";s:5:"Arial";s:23:"vantage_menu_background";s:7:"#012169";s:30:"vantage_menu_second_background";s:7:"#464646";s:23:"vantage_menu_hover_text";s:7:"#ffffff";s:19:"vantage_menu_search";s:7:"#303134";s:32:"vantage_page_masthead_background";s:7:"#4d6396";s:28:"vantage_page_page_background";s:7:"#ccd2e1";s:35:"theme_settings_navigation_home_icon";b:0;s:26:"theme_settings_home_slider";s:4:"demo";}', 'yes'),
+(353, 'theme_mods_vantage', 'a:20:{i:0;b:0;s:18:"nav_menu_locations";a:2:{s:3:"top";i:3;s:7:"primary";i:3;}s:18:"custom_css_post_id";i:-1;s:24:"vantage_sidebar_position";s:4:"none";s:30:"vantage_fonts_page_title_color";s:7:"#515151";s:27:"vantage_fonts_content_color";s:7:"#282828";s:35:"vantage_fonts_content_heading_color";s:7:"#444444";s:23:"vantage_fonts_body_font";s:5:"Arial";s:24:"vantage_fonts_title_font";s:5:"Arial";s:26:"vantage_fonts_heading_font";s:5:"Arial";s:23:"vantage_fonts_menu_font";s:5:"Arial";s:23:"vantage_menu_background";s:7:"#012169";s:30:"vantage_menu_second_background";s:7:"#464646";s:23:"vantage_menu_hover_text";s:7:"#ffffff";s:19:"vantage_menu_search";s:7:"#303134";s:32:"vantage_page_masthead_background";s:7:"#4d6396";s:28:"vantage_page_page_background";s:7:"#ccd2e1";s:35:"theme_settings_navigation_home_icon";b:0;s:26:"theme_settings_home_slider";s:4:"demo";s:25:"theme_settings_logo_image";i:113;}', 'yes'),
 (354, 'theme_switched', '', 'yes'),
 (355, 'widget_vantage-social-media', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (356, 'widget_circleicon-widget', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
@@ -441,7 +441,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (335, '_site_transient_community-events-4501c091b0366d76ea3218b6cfdd8097', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:2:"::";}s:6:"events";a:1:{i:0;a:7:{s:4:"type";s:8:"wordcamp";s:5:"title";s:18:"WordCamp Bucharest";s:3:"url";s:35:"https://2017.bucharest.wordcamp.org";s:6:"meetup";N;s:10:"meetup_url";N;s:4:"date";s:19:"2017-10-07 00:00:00";s:8:"location";a:4:{s:8:"location";s:18:"Bucharest, Romania";s:7:"country";s:2:"RO";s:8:"latitude";d:44.423019799999999;s:9:"longitude";d:26.1108513;}}}}', 'no'),
 (346, '_site_transient_timeout_wporg_theme_feature_list', '1503755613', 'no'),
 (347, '_site_transient_wporg_theme_feature_list', 'a:3:{s:6:"Layout";a:7:{i:0;s:11:"grid-layout";i:1;s:10:"one-column";i:2;s:11:"two-columns";i:3;s:13:"three-columns";i:4;s:12:"four-columns";i:5;s:12:"left-sidebar";i:6;s:13:"right-sidebar";}s:8:"Features";a:20:{i:0;s:19:"accessibility-ready";i:1;s:10:"buddypress";i:2;s:17:"custom-background";i:3;s:13:"custom-colors";i:4;s:13:"custom-header";i:5;s:11:"custom-menu";i:6;s:12:"editor-style";i:7;s:21:"featured-image-header";i:8;s:15:"featured-images";i:9;s:15:"flexible-header";i:10;s:14:"footer-widgets";i:11;s:20:"front-page-post-form";i:12;s:19:"full-width-template";i:13;s:12:"microformats";i:14;s:12:"post-formats";i:15;s:20:"rtl-language-support";i:16;s:11:"sticky-post";i:17;s:13:"theme-options";i:18;s:17:"threaded-comments";i:19;s:17:"translation-ready";}s:7:"Subject";a:9:{i:0;s:4:"blog";i:1;s:10:"e-commerce";i:2;s:9:"education";i:3;s:13:"entertainment";i:4;s:14:"food-and-drink";i:5;s:7:"holiday";i:6;s:4:"news";i:7;s:11:"photography";i:8;s:9:"portfolio";}}', 'no'),
-(139, '_transient_timeout_plugin_slugs', '1503837657', 'no'),
+(139, '_transient_timeout_plugin_slugs', '1503840709', 'no'),
 (140, '_transient_plugin_slugs', 'a:13:{i:0;s:19:"akismet/akismet.php";i:1;s:19:"bbpress/bbpress.php";i:2;s:31:"bwp-recaptcha/bwp-recaptcha.php";i:3;s:24:"buddypress/bp-loader.php";i:4;s:15:"ezphp/ezphp.php";i:5;s:9:"hello.php";i:6;s:39:"siteorigin-panels/siteorigin-panels.php";i:7;s:31:"custom-css-js/custom-css-js.php";i:8;s:39:"so-widgets-bundle/so-widgets-bundle.php";i:9;s:33:"theme-my-login/theme-my-login.php";i:10;s:37:"user-role-editor/user-role-editor.php";i:11;s:37:"wp-admin-no-show/wp-admin-no-show.php";i:12;s:32:"wp-overlays/wp-overlays-lite.php";}', 'no'),
 (141, 'recently_activated', 'a:1:{s:31:"bwp-recaptcha/bwp-recaptcha.php";i:1503580184;}', 'yes'),
 (362, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1503757101', 'no'),
@@ -498,8 +498,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (262, '_bp_db_version', '11105', 'yes'),
 (294, 'illegal_names', 'a:19:{i:0;s:3:"www";i:1;s:3:"web";i:2;s:4:"root";i:3;s:5:"admin";i:4;s:4:"main";i:5;s:6:"invite";i:6;s:13:"administrator";i:7;s:6:"groups";i:8;s:7:"members";i:9;s:6:"forums";i:10;s:5:"blogs";i:11;s:8:"activity";i:12;s:7:"profile";i:13;s:7:"friends";i:14;s:6:"search";i:15;s:8:"settings";i:16;s:13:"notifications";i:17;s:8:"register";i:18;s:8:"activate";}', 'no'),
 (390, 'custom-css-js-tree', 'a:0:{}', 'yes'),
-(413, '_site_transient_timeout_theme_roots', '1503754145', 'no'),
-(414, '_site_transient_theme_roots', 'a:4:{s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";s:7:"vantage";s:7:"/themes";}', 'no'),
+(419, '_site_transient_timeout_theme_roots', '1503756294', 'no'),
+(420, '_site_transient_theme_roots', 'a:4:{s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";s:7:"vantage";s:7:"/themes";}', 'no'),
 (301, 'user_role_editor', 'a:6:{s:11:"ure_version";s:6:"4.35.3";s:15:"show_admin_role";i:0;s:17:"ure_caps_readable";i:0;s:24:"ure_show_deprecated_caps";i:0;s:23:"ure_confirm_role_update";s:1:"1";s:14:"edit_user_caps";s:1:"1";}', 'yes');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (302, 'wp_backup_user_roles', 'a:11:{s:13:"administrator";a:2:{s:4:"name";s:13:"Administrator";s:12:"capabilities";a:71:{s:13:"switch_themes";b:1;s:11:"edit_themes";b:1;s:16:"activate_plugins";b:1;s:12:"edit_plugins";b:1;s:10:"edit_users";b:1;s:10:"edit_files";b:1;s:14:"manage_options";b:1;s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:6:"import";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:8:"level_10";b:1;s:7:"level_9";b:1;s:7:"level_8";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;s:12:"delete_users";b:1;s:12:"create_users";b:1;s:17:"unfiltered_upload";b:1;s:14:"edit_dashboard";b:1;s:14:"update_plugins";b:1;s:14:"delete_plugins";b:1;s:15:"install_plugins";b:1;s:13:"update_themes";b:1;s:14:"install_themes";b:1;s:11:"update_core";b:1;s:10:"list_users";b:1;s:12:"remove_users";b:1;s:13:"promote_users";b:1;s:18:"edit_theme_options";b:1;s:13:"delete_themes";b:1;s:6:"export";b:1;s:15:"edit_custom_css";b:1;s:15:"read_custom_css";b:1;s:17:"delete_custom_css";b:1;s:16:"edit_custom_csss";b:1;s:23:"edit_others_custom_csss";b:1;s:19:"publish_custom_csss";b:1;s:18:"delete_custom_csss";b:1;s:28:"delete_published_custom_csss";b:1;s:25:"delete_others_custom_csss";b:1;s:26:"edit_published_custom_csss";b:1;}}s:6:"editor";a:2:{s:4:"name";s:6:"Editor";s:12:"capabilities";a:34:{s:17:"moderate_comments";b:1;s:17:"manage_categories";b:1;s:12:"manage_links";b:1;s:12:"upload_files";b:1;s:15:"unfiltered_html";b:1;s:10:"edit_posts";b:1;s:17:"edit_others_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:10:"edit_pages";b:1;s:4:"read";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:17:"edit_others_pages";b:1;s:20:"edit_published_pages";b:1;s:13:"publish_pages";b:1;s:12:"delete_pages";b:1;s:19:"delete_others_pages";b:1;s:22:"delete_published_pages";b:1;s:12:"delete_posts";b:1;s:19:"delete_others_posts";b:1;s:22:"delete_published_posts";b:1;s:20:"delete_private_posts";b:1;s:18:"edit_private_posts";b:1;s:18:"read_private_posts";b:1;s:20:"delete_private_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"read_private_pages";b:1;}}s:6:"author";a:2:{s:4:"name";s:6:"Author";s:12:"capabilities";a:10:{s:12:"upload_files";b:1;s:10:"edit_posts";b:1;s:20:"edit_published_posts";b:1;s:13:"publish_posts";b:1;s:4:"read";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;s:22:"delete_published_posts";b:1;}}s:11:"contributor";a:2:{s:4:"name";s:11:"Contributor";s:12:"capabilities";a:5:{s:10:"edit_posts";b:1;s:4:"read";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:12:"delete_posts";b:1;}}s:10:"subscriber";a:2:{s:4:"name";s:10:"Subscriber";s:12:"capabilities";a:2:{s:4:"read";b:1;s:7:"level_0";b:1;}}s:13:"bbp_keymaster";a:2:{s:4:"name";s:9:"Keymaster";s:12:"capabilities";a:29:{s:9:"keep_gate";b:1;s:8:"spectate";b:1;s:11:"participate";b:1;s:8:"moderate";b:1;s:8:"throttle";b:1;s:10:"view_trash";b:1;s:14:"publish_forums";b:1;s:11:"edit_forums";b:1;s:18:"edit_others_forums";b:1;s:13:"delete_forums";b:1;s:20:"delete_others_forums";b:1;s:19:"read_private_forums";b:1;s:18:"read_hidden_forums";b:1;s:14:"publish_topics";b:1;s:11:"edit_topics";b:1;s:18:"edit_others_topics";b:1;s:13:"delete_topics";b:1;s:20:"delete_others_topics";b:1;s:19:"read_private_topics";b:1;s:15:"publish_replies";b:1;s:12:"edit_replies";b:1;s:19:"edit_others_replies";b:1;s:14:"delete_replies";b:1;s:21:"delete_others_replies";b:1;s:20:"read_private_replies";b:1;s:17:"manage_topic_tags";b:1;s:15:"edit_topic_tags";b:1;s:17:"delete_topic_tags";b:1;s:17:"assign_topic_tags";b:1;}}s:13:"bbp_spectator";a:2:{s:4:"name";s:9:"Spectator";s:12:"capabilities";a:1:{s:8:"spectate";b:1;}}s:11:"bbp_blocked";a:2:{s:4:"name";s:7:"Blocked";s:12:"capabilities";a:28:{s:8:"spectate";b:0;s:11:"participate";b:0;s:8:"moderate";b:0;s:8:"throttle";b:0;s:10:"view_trash";b:0;s:14:"publish_forums";b:0;s:11:"edit_forums";b:0;s:18:"edit_others_forums";b:0;s:13:"delete_forums";b:0;s:20:"delete_others_forums";b:0;s:19:"read_private_forums";b:0;s:18:"read_hidden_forums";b:0;s:14:"publish_topics";b:0;s:11:"edit_topics";b:0;s:18:"edit_others_topics";b:0;s:13:"delete_topics";b:0;s:20:"delete_others_topics";b:0;s:19:"read_private_topics";b:0;s:15:"publish_replies";b:0;s:12:"edit_replies";b:0;s:19:"edit_others_replies";b:0;s:14:"delete_replies";b:0;s:21:"delete_others_replies";b:0;s:20:"read_private_replies";b:0;s:17:"manage_topic_tags";b:0;s:15:"edit_topic_tags";b:0;s:17:"delete_topic_tags";b:0;s:17:"assign_topic_tags";b:0;}}s:13:"bbp_moderator";a:2:{s:4:"name";s:9:"Moderator";s:12:"capabilities";a:25:{s:8:"spectate";b:1;s:11:"participate";b:1;s:8:"moderate";b:1;s:8:"throttle";b:1;s:10:"view_trash";b:1;s:14:"publish_forums";b:1;s:11:"edit_forums";b:1;s:19:"read_private_forums";b:1;s:18:"read_hidden_forums";b:1;s:14:"publish_topics";b:1;s:11:"edit_topics";b:1;s:18:"edit_others_topics";b:1;s:13:"delete_topics";b:1;s:20:"delete_others_topics";b:1;s:19:"read_private_topics";b:1;s:15:"publish_replies";b:1;s:12:"edit_replies";b:1;s:19:"edit_others_replies";b:1;s:14:"delete_replies";b:1;s:21:"delete_others_replies";b:1;s:20:"read_private_replies";b:1;s:17:"manage_topic_tags";b:1;s:15:"edit_topic_tags";b:1;s:17:"delete_topic_tags";b:1;s:17:"assign_topic_tags";b:1;}}s:15:"bbp_participant";a:2:{s:4:"name";s:11:"Participant";s:12:"capabilities";a:8:{s:8:"spectate";b:1;s:11:"participate";b:1;s:19:"read_private_forums";b:1;s:14:"publish_topics";b:1;s:11:"edit_topics";b:1;s:15:"publish_replies";b:1;s:12:"edit_replies";b:1;s:17:"assign_topic_tags";b:1;}}s:15:"css_js_designer";a:2:{s:4:"name";s:12:"Web Designer";s:12:"capabilities";a:46:{s:7:"level_9";b:1;s:7:"level_8";b:1;s:7:"level_7";b:1;s:7:"level_6";b:1;s:7:"level_5";b:1;s:7:"level_4";b:1;s:7:"level_3";b:1;s:7:"level_2";b:1;s:7:"level_1";b:1;s:7:"level_0";b:1;s:4:"read";b:1;s:18:"read_private_pages";b:1;s:18:"read_private_posts";b:1;s:10:"edit_users";b:1;s:10:"edit_posts";b:1;s:10:"edit_pages";b:1;s:20:"edit_published_posts";b:1;s:20:"edit_published_pages";b:1;s:18:"edit_private_pages";b:1;s:18:"edit_private_posts";b:1;s:17:"edit_others_posts";b:1;s:17:"edit_others_pages";b:1;s:13:"publish_posts";b:1;s:13:"publish_pages";b:1;s:12:"delete_posts";b:1;s:12:"delete_pages";b:1;s:20:"delete_private_pages";b:1;s:20:"delete_private_posts";b:1;s:22:"delete_published_pages";b:1;s:22:"delete_published_posts";b:1;s:19:"delete_others_posts";b:1;s:19:"delete_others_pages";b:1;s:17:"manage_categories";b:1;s:17:"moderate_comments";b:1;s:15:"unfiltered_html";b:1;s:12:"upload_files";b:1;s:15:"edit_custom_css";b:1;s:15:"read_custom_css";b:1;s:17:"delete_custom_css";b:1;s:16:"edit_custom_csss";b:1;s:23:"edit_others_custom_csss";b:1;s:19:"publish_custom_csss";b:1;s:18:"delete_custom_csss";b:1;s:28:"delete_published_custom_csss";b:1;s:25:"delete_others_custom_csss";b:1;s:26:"edit_published_custom_csss";b:1;}}}', 'no'),
@@ -507,12 +507,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (304, '_site_transient_timeout_ure_caps_readable', '1503584405', 'no'),
 (305, '_site_transient_ure_caps_readable', '0', 'no'),
 (411, 'blogpost_settings', 'a:11:{s:12:"slide_effect";s:6:"fadeIn";s:17:"slide_effect_exit";s:7:"fadeOut";s:13:"overlay_color";s:7:"#3e29b5";s:15:"overlay_content";s:0:"";s:13:"opacity_value";d:0.5;s:19:"overlay_width_value";i:100;s:20:"overlay_height_value";i:100;s:14:"show_effect_on";s:8:"pageload";s:8:"apply_on";a:1:{i:0;s:12:"post_listing";}s:19:"slide_text_position";s:14:"overlay_center";s:15:"animation_speed";i:1;}', 'yes'),
-(416, '_transient_is_multi_author', '0', 'yes');
+(417, '_site_transient_timeout_browser_bd9c32849e24d76de4d61ef65b8c67c5', '1504359188', 'no'),
+(418, '_site_transient_browser_bd9c32849e24d76de4d61ef65b8c67c5', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"60.0.3112.101";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no');
 
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_postmeta`
+-- Table structure for table `wp_postmeta`
 --
 
 CREATE TABLE `wp_postmeta` (
@@ -523,7 +524,7 @@ CREATE TABLE `wp_postmeta` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_postmeta`
+-- Dumping data for table `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -692,12 +693,17 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (207, 111, '_wp_trash_meta_time', '1503750429'),
 (208, 112, '_wp_trash_meta_status', 'publish'),
 (209, 112, '_wp_trash_meta_time', '1503752550'),
-(210, 112, 'vantage_panels_no_legacy', 'true');
+(210, 112, 'vantage_panels_no_legacy', 'true'),
+(211, 113, '_wp_attached_file', '2017/08/Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C.jpg'),
+(212, 113, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:4961;s:6:"height";i:1486;s:4:"file";s:64:"2017/08/Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C.jpg";s:5:"sizes";a:10:{s:9:"thumbnail";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:63:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-300x90.jpg";s:5:"width";i:300;s:6:"height";i:90;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-768x230.jpg";s:5:"width";i:768;s:6:"height";i:230;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:65:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-1024x307.jpg";s:5:"width";i:1024;s:6:"height";i:307;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-720x380.jpg";s:5:"width";i:720;s:6:"height";i:380;s:9:"mime-type";s:10:"image/jpeg";}s:28:"vantage-thumbnail-no-sidebar";a:4:{s:4:"file";s:65:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-1080x380.jpg";s:5:"width";i:1080;s:6:"height";i:380;s:9:"mime-type";s:10:"image/jpeg";}s:13:"vantage-slide";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-960x480.jpg";s:5:"width";i:960;s:6:"height";i:480;s:9:"mime-type";s:10:"image/jpeg";}s:16:"vantage-carousel";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-272x182.jpg";s:5:"width";i:272;s:6:"height";i:182;s:9:"mime-type";s:10:"image/jpeg";}s:17:"vantage-grid-loop";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-436x272.jpg";s:5:"width";i:436;s:6:"height";i:272;s:9:"mime-type";s:10:"image/jpeg";}s:20:"sow-carousel-default";a:4:{s:4:"file";s:64:"Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C-272x182.jpg";s:5:"width";i:272;s:6:"height";i:182;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}'),
+(213, 114, '_wp_trash_meta_status', 'publish'),
+(214, 114, '_wp_trash_meta_time', '1503754813'),
+(215, 114, 'vantage_panels_no_legacy', 'true');
 
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_posts`
+-- Table structure for table `wp_posts`
 --
 
 CREATE TABLE `wp_posts` (
@@ -727,7 +733,7 @@ CREATE TABLE `wp_posts` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_posts`
+-- Dumping data for table `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -839,12 +845,14 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (109, 1, '2017-08-26 14:19:20', '2017-08-26 12:19:20', '<div id="pl-109"  class="panel-layout" ><div id="pg-109-0"  class="panel-grid panel-no-style"  data-style="{&quot;background_display&quot;:&quot;tile&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}" ><div id="pgc-109-0-0"  class="panel-grid-cell"  data-weight="1" ><div id="panel-109-0-0-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="0" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" ><h3 class="widget-title">test</h3><img width="300" height="200" src="http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-300x200.png" class="image wp-image-104  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-300x200.png 300w, http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-272x182.png 272w, http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds.png 700w" sizes="(max-width: 300px) 100vw, 300px" /></div></div></div><div id="pg-109-1"  class="panel-grid panel-no-style" ><div id="pgc-109-1-0"  class="panel-grid-cell"  data-weight="1" ><div id="panel-109-1-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="1" data-style="{&quot;background_display&quot;:&quot;tile&quot;}" ><div class="so-widget-sow-editor so-widget-sow-editor-base">\n<div class="siteorigin-widget-tinymce textwidget">\n	[bbp-forum-index]</div>\n</div></div></div></div></div>', 'Forum', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2017-08-26 14:19:20', '2017-08-26 12:19:20', '', 13, 'http://localhost/testsite/wordpress/2017/08/26/13-revision-v1/', 0, 'revision', '', 0),
 (110, 1, '2017-08-26 14:19:20', '2017-08-26 12:19:20', '<div id="pl-13"  class="panel-layout" ><div id="pg-13-0"  class="panel-grid panel-no-style"  data-style="{&quot;background_display&quot;:&quot;tile&quot;,&quot;cell_alignment&quot;:&quot;flex-start&quot;}" ><div id="pgc-13-0-0"  class="panel-grid-cell"  data-weight="1" ><div id="panel-13-0-0-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="0" data-style="{&quot;background_image_attachment&quot;:false,&quot;background_display&quot;:&quot;tile&quot;}" ><h3 class="widget-title">test</h3><img width="300" height="200" src="http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-300x200.png" class="image wp-image-104  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-300x200.png 300w, http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds-272x182.png 272w, http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Birds.png 700w" sizes="(max-width: 300px) 100vw, 300px" /></div></div></div><div id="pg-13-1"  class="panel-grid panel-no-style" ><div id="pgc-13-1-0"  class="panel-grid-cell"  data-weight="1" ><div id="panel-13-1-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="1" data-style="{&quot;background_display&quot;:&quot;tile&quot;}" ><div class="so-widget-sow-editor so-widget-sow-editor-base">\n<div class="siteorigin-widget-tinymce textwidget">\n	[bbp-forum-index]</div>\n</div></div></div></div></div>', 'Forum', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2017-08-26 14:19:20', '2017-08-26 12:19:20', '', 13, 'http://localhost/testsite/wordpress/2017/08/26/13-revision-v1/', 0, 'revision', '', 0),
 (111, 1, '2017-08-26 14:27:09', '2017-08-26 12:27:09', '{\n    "vantage::theme_settings_navigation_home_icon": {\n        "value": false,\n        "type": "theme_mod",\n        "user_id": 1\n    },\n    "vantage::theme_settings_home_slider": {\n        "value": "",\n        "type": "theme_mod",\n        "user_id": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '67dc556f-ad14-41a3-a656-e3f482907184', '', '', '2017-08-26 14:27:09', '2017-08-26 12:27:09', '', 0, 'http://localhost/testsite/wordpress/?p=111', 0, 'customize_changeset', '', 0),
-(112, 1, '2017-08-26 15:02:30', '2017-08-26 13:02:30', '{\n    "vantage::theme_settings_home_slider": {\n        "value": "demo",\n        "type": "theme_mod",\n        "user_id": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'a59685b1-4129-447d-ae71-76da77459f61', '', '', '2017-08-26 15:02:30', '2017-08-26 13:02:30', '', 0, 'http://localhost/testsite/wordpress/2017/08/26/a59685b1-4129-447d-ae71-76da77459f61/', 0, 'customize_changeset', '', 0);
+(112, 1, '2017-08-26 15:02:30', '2017-08-26 13:02:30', '{\n    "vantage::theme_settings_home_slider": {\n        "value": "demo",\n        "type": "theme_mod",\n        "user_id": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'a59685b1-4129-447d-ae71-76da77459f61', '', '', '2017-08-26 15:02:30', '2017-08-26 13:02:30', '', 0, 'http://localhost/testsite/wordpress/2017/08/26/a59685b1-4129-447d-ae71-76da77459f61/', 0, 'customize_changeset', '', 0),
+(113, 1, '2017-08-26 15:39:45', '2017-08-26 13:39:45', '', 'Logo UB orizontal limba romana CULOARE SPECIALA 280C', '', 'inherit', 'open', 'closed', '', 'logo-ub-orizontal-limba-romana-culoare-speciala-280c', '', '', '2017-08-26 15:39:45', '2017-08-26 13:39:45', '', 0, 'http://localhost/testsite/wordpress/wp-content/uploads/2017/08/Logo-UB-orizontal-limba-romana-CULOARE-SPECIALA-280C.jpg', 0, 'attachment', 'image/jpeg', 0),
+(114, 1, '2017-08-26 15:40:13', '2017-08-26 13:40:13', '{\n    "vantage::theme_settings_logo_image": {\n        "value": 113,\n        "type": "theme_mod",\n        "user_id": 1\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'ac35dccf-7fab-40fd-8662-376e038276b4', '', '', '2017-08-26 15:40:13', '2017-08-26 13:40:13', '', 0, 'http://localhost/testsite/wordpress/2017/08/26/ac35dccf-7fab-40fd-8662-376e038276b4/', 0, 'customize_changeset', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_signups`
+-- Table structure for table `wp_signups`
 --
 
 CREATE TABLE `wp_signups` (
@@ -862,7 +870,7 @@ CREATE TABLE `wp_signups` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_signups`
+-- Dumping data for table `wp_signups`
 --
 
 INSERT INTO `wp_signups` (`signup_id`, `domain`, `path`, `title`, `user_login`, `user_email`, `registered`, `activated`, `active`, `activation_key`, `meta`) VALUES
@@ -871,7 +879,7 @@ INSERT INTO `wp_signups` (`signup_id`, `domain`, `path`, `title`, `user_login`, 
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_termmeta`
+-- Table structure for table `wp_termmeta`
 --
 
 CREATE TABLE `wp_termmeta` (
@@ -884,7 +892,7 @@ CREATE TABLE `wp_termmeta` (
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_terms`
+-- Table structure for table `wp_terms`
 --
 
 CREATE TABLE `wp_terms` (
@@ -895,7 +903,7 @@ CREATE TABLE `wp_terms` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_terms`
+-- Dumping data for table `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -923,7 +931,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_term_relationships`
+-- Table structure for table `wp_term_relationships`
 --
 
 CREATE TABLE `wp_term_relationships` (
@@ -933,7 +941,7 @@ CREATE TABLE `wp_term_relationships` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_term_relationships`
+-- Dumping data for table `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -965,7 +973,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_term_taxonomy`
+-- Table structure for table `wp_term_taxonomy`
 --
 
 CREATE TABLE `wp_term_taxonomy` (
@@ -978,7 +986,7 @@ CREATE TABLE `wp_term_taxonomy` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_term_taxonomy`
+-- Dumping data for table `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -1006,7 +1014,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_usermeta`
+-- Table structure for table `wp_usermeta`
 --
 
 CREATE TABLE `wp_usermeta` (
@@ -1017,7 +1025,7 @@ CREATE TABLE `wp_usermeta` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_usermeta`
+-- Dumping data for table `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -1035,9 +1043,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (12, 1, 'wp_user_level', '10'),
 (13, 1, 'dismissed_wp_pointers', ''),
 (14, 1, 'show_welcome_panel', '1'),
-(130, 1, 'session_tokens', 'a:2:{s:64:"6ebc87df5bbc432ba6a4e14434d1c3db00cc4a3ba57f41f252f33768317c360a";a:4:{s:10:"expiration";i:1503759291;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503586491;}s:64:"72c685d2ff185d053f141f76a6f97ea96620f1c8db2ee9394c07418c2a8666de";a:4:{s:10:"expiration";i:1503916150;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503743350;}}'),
-(16, 1, 'wp_user-settings', 'libraryContent=browse&editor=html'),
-(17, 1, 'wp_user-settings-time', '1503580582'),
+(130, 1, 'session_tokens', 'a:3:{s:64:"6ebc87df5bbc432ba6a4e14434d1c3db00cc4a3ba57f41f252f33768317c360a";a:4:{s:10:"expiration";i:1503759291;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503586491;}s:64:"72c685d2ff185d053f141f76a6f97ea96620f1c8db2ee9394c07418c2a8666de";a:4:{s:10:"expiration";i:1503916150;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503743350;}s:64:"0c9300dca9fb62f936447781345b9cb1fd14ed8afa1030f24966eda4f79c3957";a:4:{s:10:"expiration";i:1503926810;s:2:"ip";s:3:"::1";s:2:"ua";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36";s:5:"login";i:1503754010;}}'),
+(16, 1, 'wp_user-settings', 'editor=tinymce&libraryContent=browse'),
+(17, 1, 'wp_user-settings-time', '1503754006'),
 (18, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (19, 1, 'community-events-location', 'a:1:{s:2:"ip";s:2:"::";}'),
 (20, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
@@ -1071,7 +1079,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (48, 3, 'wp_capabilities', 'a:2:{s:10:"subscriber";b:1;s:15:"bbp_participant";b:1;}'),
 (49, 3, 'wp_user_level', '0'),
 (50, 3, 'default_password_nag', ''),
-(51, 3, 'session_tokens', 'a:3:{s:64:"c8bb7295c45bea4378d05bffc6df3a42713481aaf549b76a666f2cb968a3fc85";a:4:{s:10:"expiration";i:1504788385;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503578785;}s:64:"8dd8ec273c0cc9f7f5f8e1fece49ae1fe7eeca6bd552e08b489b5ca88ebe3c4f";a:4:{s:10:"expiration";i:1503759874;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503587074;}s:64:"f86fb46a3f150ee1d1f4ebd4152a216a1b80537702fb16b3e982f56cdce3edad";a:4:{s:10:"expiration";i:1503920249;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503747449;}}'),
+(51, 3, 'session_tokens', 'a:4:{s:64:"c8bb7295c45bea4378d05bffc6df3a42713481aaf549b76a666f2cb968a3fc85";a:4:{s:10:"expiration";i:1504788385;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503578785;}s:64:"8dd8ec273c0cc9f7f5f8e1fece49ae1fe7eeca6bd552e08b489b5ca88ebe3c4f";a:4:{s:10:"expiration";i:1503759874;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503587074;}s:64:"f86fb46a3f150ee1d1f4ebd4152a216a1b80537702fb16b3e982f56cdce3edad";a:4:{s:10:"expiration";i:1503920249;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503747449;}s:64:"cc1736c1439fe571204588daec187a17a6b9e88b53e1de1617948e295639e8ae";a:4:{s:10:"expiration";i:1503927067;s:2:"ip";s:3:"::1";s:2:"ua";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36";s:5:"login";i:1503754267;}}'),
 (52, 3, 'wp_user-settings', 'mfold=o'),
 (53, 3, 'wp_user-settings-time', '1503572746'),
 (54, 3, 'community-events-location', 'a:1:{s:2:"ip";s:2:"::";}'),
@@ -1103,13 +1111,13 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (80, 5, 'default_password_nag', ''),
 (81, 5, 'session_tokens', 'a:1:{s:64:"2a1dbfe2b11680c540e6f0006931145dd6e3ba72847fbd0c2d730928d04d7528";a:4:{s:10:"expiration";i:1504783052;s:2:"ip";s:3:"::1";s:2:"ua";s:73:"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:5:"login";i:1503573452;}}'),
 (82, 5, 'wp__bbp_last_posted', '1503573468'),
-(83, 1, 'last_activity', '2017-08-26 12:59:24'),
+(83, 1, 'last_activity', '2017-08-26 13:35:01'),
 (97, 6, 'nickname', 'test2'),
 (98, 6, 'first_name', 'test2'),
 (99, 6, 'last_name', ''),
 (100, 6, 'description', ''),
 (101, 6, 'rich_editing', 'true'),
-(84, 3, 'last_activity', '2017-08-26 13:02:39'),
+(84, 3, 'last_activity', '2017-08-26 13:31:08'),
 (85, 3, 'wp__bbp_last_posted', '1503580402'),
 (89, 5, 'community-events-location', 'a:1:{s:2:"ip";s:2:"::";}'),
 (88, 5, 'last_activity', '2017-08-24 13:42:10'),
@@ -1140,7 +1148,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Structura de tabel pentru tabelul `wp_users`
+-- Table structure for table `wp_users`
 --
 
 CREATE TABLE `wp_users` (
@@ -1157,7 +1165,7 @@ CREATE TABLE `wp_users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Salvarea datelor din tabel `wp_users`
+-- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
@@ -1423,17 +1431,17 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=417;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=421;
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 --
 -- AUTO_INCREMENT for table `wp_signups`
 --
