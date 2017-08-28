@@ -5661,3 +5661,7 @@ function logout_without_confirm($action, $result)
         die;
     }
 }
+/**
+ *remove top bar
+*/
+add_filter('show_admin_bar', '__return_false');
